@@ -1,6 +1,6 @@
 {% set name = "python-goosefem" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "13903af0704d05037d1c4e7a35cc749829439a95171dd09f0bb8ab7d28b584b3" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "62431bd16cc774daa418bef8e559373946a87a79f6e5acd8c609ae47c6fe7c8a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,9 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  skip: True  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  skip: true  # [win]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -36,8 +36,8 @@ about:
   license: GPL3
   license_family: GPL3
   license_file: LICENSE
-  summary: 'Finite element simulations.'
-  description: 'Finite element simulations.'
+  summary: Finite element simulations.
+  description: Finite element simulations.
   doc_url: https://goosefem.rtfd.io
   dev_url: https://github.com/tdegeus/GooseFEM
 
