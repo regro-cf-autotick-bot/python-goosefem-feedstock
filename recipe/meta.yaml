@@ -1,6 +1,6 @@
 {% set name = "python-goosefem" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "62431bd16cc774daa418bef8e559373946a87a79f6e5acd8c609ae47c6fe7c8a" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "1bb219af0f64e262b0c84b4a3a6f6ae0affc70c72341e7dd5c108fa7c80175a9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,6 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
