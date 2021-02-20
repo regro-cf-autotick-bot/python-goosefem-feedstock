@@ -1,6 +1,6 @@
 {% set name = "python-goosefem" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "57e83a2cf024b01fdf344c1209f0186dcbeba56df659f6a2130486185ddc2320" %}
+{% set version = "0.8.4" %}
+{% set sha256 = "69d908b13f155ddcee4791cc8ec73e44d4f8b7a0e51246c2872e32af2835e177" %}
 
 package:
   name: {{ name|lower }}
