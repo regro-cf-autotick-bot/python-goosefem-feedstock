@@ -1,6 +1,5 @@
 {% set name = "python-goosefem" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "4309fdb72ab670bf67a8c40e478cb19c7eed2849b8a775d14b6f560625e69004" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tdegeus/GooseFEM/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: "ed4506f0071c92557f16a500079560e05fd7c011efbc0e5ffa467b65a9336042"
 
 build:
   number: 0
