@@ -1,5 +1,5 @@
 {% set name = "python-goosefem" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,11 @@ package:
 
 source:
   url: https://github.com/tdegeus/GooseFEM/archive/v{{ version }}.tar.gz
-  sha256: "ed4506f0071c92557f16a500079560e05fd7c011efbc0e5ffa467b65a9336042"
+  sha256: 1e46b05ef6421666ac69f4a9706369a970a572d65a7cfbccca476af998963fb8
 
 build:
   number: 0
+  script_env: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,6 +20,7 @@ requirements:
   host:
     - python
     - setuptools
+    - setuptools_scm
     - pip
     - pyxtensor
     - eigen
