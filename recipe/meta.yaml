@@ -1,5 +1,5 @@
 {% set name = "python-goosefem" %}
-{% set version = "0.10.2" %}
+{% set version = "0.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tdegeus/GooseFEM/archive/v{{ version }}.tar.gz
-  sha256: 1e46b05ef6421666ac69f4a9706369a970a572d65a7cfbccca476af998963fb8
+  sha256: c2e4e14314a00c391d3c42e1f3dbb7758b71538516b58caf1e0226521352c719
 
 build:
   number: 0
